@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= initial-scale=1.0" />
+    <title>payment form</title>
+    <link rel="stylesheet" href="PaymentForm.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <body>
+    <div class="container">
+      <form action="location">
+        <h1 class="main_heading">Payment Form</h1>
+        <hr />
+        <p>Required fields are followed by *</p>
+        <h2>User Information</h2>
+        <p>
+          Name: *<input
+            type="text"
+            name="name"
+            required
+            placeholder="Enter Name"
+          />
+        </p>
+
+        <fieldset>
+          <legend>Gender *</legend>
+          <p>
+            Male <input type="radio" name="gender" id="male" /> Female
+            <input type="radio" name="gender" id="female" />
+          </p>
+        </fieldset>
+        <p>
+          Address:
+          <textarea
+            name="address"
+            id="address"
+            cols="100"
+            rows="8"
+            placeholder="Enter  Permanent Address *"
+          ></textarea>
+        </p>
+        <p>
+          Email: *
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Enter Mail Id * "
+          />
+        </p>
+        <p>
+          Pincode: *
+          <input
+            type="number"
+            name="pincode"
+            id="pincode"
+            required
+            placeholder="Enter Pin code *"
+          />
+        </p>
+        <p>
+          City:
+          <input
+            type="text"
+            name="City"
+            id="city"
+            required
+            placeholder="Enter City Name *"
+          />
+        </p>
+        <p>
+          <select name="country_name" id="country" required>
+            <option value=""><b>Choose Your Country</b></option>
+            <option value="visa">Austrailia</option>
+            <option value="mastercard">India</option>
+            <option value="rupay">Pakistan</option>
+            <option value="rupay">Japan</option>
+            <option value="rupay">Kambodia</option>
+            <option value="rupay">Switzerland</option>
+            <option value="rupay">Saudia</option>
+            <option value="rupay">Ameriaca</option>
+            <option value="rupay">France</option>
+            <option value="rupay">Italy</option>
+            <option value="rupay">Afgahanistan</option>
+            <option value="rupay">Mosasa</option>
+            <option value="rupay">Nepal</option>
+            <option value="rupay">Bhutan</option>
+            <option value="rupay">China</option>
+            <option value="rupay">Burma</option>
+          </select>
+        </p>
+        <hr />
+        <h2>Payment Card Information</h2>
+
+        <div class="card" style="width: 18rem">
+          <!--  <img
+            src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ffreepngimg.com%2Fpng%2F9539-atm-card-download-png&psig=AOvVaw30lbxzhqpBtnOIU7sGcd80&ust=1627874825992000&source=images&cd=vfe&ved=2ahUKEwiSsJq38I7yAhUuGrcAHWNODNIQr4kDegUIARDoAQ"
+            class="card-img-top"
+            alt=" payment Card Image" 
+          /> -->
+          <div class="card-body">
+            <h1 class="card-title">Card Title</h1>
+            <p class="card-text">Enter Card Details CareFully</p>
+          </div>
+        </div>
+
+        <p>
+          <select name="card_type" id="card_type" required>
+            <option value="">--Select a card Type--</option>
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="rupay">Rupay</option>
+          </select>
+        </p>
+        <p>
+          Card Number *
+          <input type="number" name="card_number" id="card_number" required />
+        </p>
+        <p>
+          Expiration Date: *<input type="date" name="exp_date" id="exp_date" />
+        </p>
+
+        <p>Cvv * <input type="password" name="cvv" id="cvv" required /></p>
+        <p><button class="submit">PayNow</button></p>
+      </form>
+    </div>
+  </body>
+</html>
